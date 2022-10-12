@@ -16,6 +16,7 @@ if (navigator.share) {
   // Show button if it supports webShareAPI
   btn.style.display = "block";
   btn.addEventListener("click", () =>
+    console.log('click');
     webShareAPI("header", "description", "www.url.com")
   );
 } else {
